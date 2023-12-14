@@ -469,8 +469,3 @@ a:hover {
     margin-bottom: 0;
   }
 }
-@media (min-width: 100px),(max-width) {
-  .parsa {
-    width: 67%;
-    float: left;
-  }
