@@ -55,37 +55,15 @@ a:hover {
   background-position: center;
 }
 
-#top-carousel .carousel-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 100px;
-}
-
 #top-carousel li {
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
 
-#top-carousel .carousel-content {
-  color: white;
-  max-width: 900px;
-  margin: 10% auto;
-  padding: 0 70px;
-}
-
 #top-carousel .carousel-title {
   margin-bottom: 50px;
   font-size: 26px;
-}
-
-#top-carousel .carousel-text {
-  margin-bottom: 50px;
-  font-weight: 300;
 }
 
 #top-carousel .carousel-btn {
