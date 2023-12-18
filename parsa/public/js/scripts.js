@@ -92,28 +92,41 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+var currentScreenSize = null;
+
 function checkScreenSize() {
   var video1 = document.getElementById("video1");
   var video2 = document.getElementById("video2");
 
   if (window.matchMedia("(min-width: 100px) and (max-width: 450px)").matches) {
     // For screen sizes between 100px and 450px
-    video1.play();
-    video2.pause();
-    video2.style.display = "none";
+    if (currentScreenSize !== "small") {
+      video1.play();
+      video2.pause();
+      video2.style.display = "none";
+      video1.style.display = "block";
+      currentScreenSize = "small";
+    }
   } else if (
     window.matchMedia("(min-width: 451px) and (max-width: 1200px)").matches
   ) {
     // For screen sizes between 451px and 1200px
-    video1.pause();
-    video2.play();
-    video1.style.display = "none";
+    if (currentScreenSize !== "medium") {
+      video1.pause();
+      video2.play();
+      video1.style.display = "none";
+      video2.style.display = "block";
+      currentScreenSize = "medium";
+    }
   } else {
     // For other screen sizes
-    video1.pause();
-    video2.pause();
-    video1.style.display = "block";
-    video2.style.display = "block";
+    if (currentScreenSize !== "none") {
+      video1.pause();
+      video2.pause();
+      video1.style.display = "block";
+      video2.style.display = "block";
+      currentScreenSize = "none";
+    }
   }
 }
 
