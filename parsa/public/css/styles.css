@@ -34,7 +34,9 @@ a:hover {
 #logo a {
   color: white;
 }
-
+.custom-button {
+  display: noun;
+}
 #toggler {
   position: absolute;
   left: 40px;

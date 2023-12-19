@@ -99,7 +99,6 @@ function checkScreenSize() {
   var video2 = document.getElementById("video2");
 
   if (window.matchMedia("(min-width: 100px) and (max-width: 450px)").matches) {
-    // For screen sizes between 100px and 450px
     if (currentScreenSize !== "small") {
       video1.play();
       video2.pause();
@@ -110,7 +109,6 @@ function checkScreenSize() {
   } else if (
     window.matchMedia("(min-width: 451px) and (max-width: 1200px)").matches
   ) {
-    // For screen sizes between 451px and 1200px
     if (currentScreenSize !== "medium") {
       video1.pause();
       video2.play();
@@ -119,17 +117,15 @@ function checkScreenSize() {
       currentScreenSize = "medium";
     }
   } else {
-    // For other screen sizes
     if (currentScreenSize !== "none") {
       video1.pause();
-      video2.pause();
-      video1.style.display = "block";
+      video2.play();
+      video1.style.display = "noun";
       video2.style.display = "block";
       currentScreenSize = "none";
     }
   }
 }
 
-// Call the function on page load and whenever the screen size changes
 window.addEventListener("load", checkScreenSize);
 window.addEventListener("resize", checkScreenSize);
