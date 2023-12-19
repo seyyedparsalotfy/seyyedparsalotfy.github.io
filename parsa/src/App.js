@@ -4,9 +4,13 @@ export const SSY = () => {
   return (
     <TypeAnimation
       sequence={["ما پیشگامان آینده دیجیتال هستیم!", 1000]}
-      wrapper="span"
       speed={200}
-      style={{ fontSize: "2em", display: "inline-block" }}
+      style={{
+        fontSize: "2em",
+        position: "relative",
+        backgroundColor: "gray",
+        display: "inline-block",
+      }}
     />
   );
 };
@@ -19,7 +23,11 @@ export const MMY = () => {
       ]}
       wrapper="span"
       speed={200}
-      style={{ fontSize: "2em", display: "inline-block" }}
+      style={{
+        fontSize: "2em",
+        display: "inline-block",
+        position: "absolute",
+      }}
     />
   );
 };

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { SSY, MMY } from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import "./App.css";
 ReactDOM.render(
   <div>
     <SSY />
