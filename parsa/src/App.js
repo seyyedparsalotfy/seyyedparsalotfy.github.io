@@ -11,12 +11,12 @@ export const SSY = () => {
         whiteSpace: "pre-line",
         height: "195px",
         display: "inline-block",
-        position: "relative",
+        position: "absolute",
 
         top: "65%",
-        backgroundColor: "#3c556e",
+
         borderradius: "1em",
-        color: "#000",
+        color: "white",
       }}
     />
   );
@@ -37,9 +37,9 @@ export const MMY = () => {
         position: "relative",
 
         top: "65%",
-        backgroundColor: "#3c556e",
+
         borderradius: "1em",
-        color: "#000",
+        color: "white",
       }}
     />
   );
