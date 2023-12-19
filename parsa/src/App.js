@@ -5,7 +5,7 @@ export const SSY = () => {
     <TypeAnimation
       sequence={["ما پیشگامان آینده دیجیتال هستیم!", 1000]}
       wrapper="span"
-      speed={50}
+      speed={200}
       style={{ fontSize: "2em", display: "inline-block" }}
     />
   );
@@ -18,7 +18,7 @@ export const MMY = () => {
         1000,
       ]}
       wrapper="span"
-      speed={50}
+      speed={200}
       style={{ fontSize: "2em", display: "inline-block" }}
     />
   );
