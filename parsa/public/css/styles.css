@@ -10,13 +10,12 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
+
 #root {
   position: absolute;
 }
+
 video {
   width: 100%;
   height: 100%;
