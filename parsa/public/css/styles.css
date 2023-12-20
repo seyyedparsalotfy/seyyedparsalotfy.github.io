@@ -115,13 +115,6 @@ a:hover {
   padding-bottom: 15px;
 }
 
-.section-header p {
-  text-align: center;
-  padding-bottom: 30px;
-  max-width: 800px;
-  margin: 30px auto;
-}
-
 #about::before {
   position: absolute;
   content: "";
