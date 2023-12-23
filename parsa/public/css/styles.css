@@ -147,8 +147,8 @@ a:hover {
   animation: moving-border 4s linear infinite;
   border-color: gold;
   border-radius: 2em;
+  text-align: center;
 }
-
 #about .card-text {
   color: #444;
   font-size: 14px;
