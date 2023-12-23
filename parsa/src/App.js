@@ -8,7 +8,6 @@ const MMY = () => {
       style={{
         whiteSpace: "pre-line",
         height: "195px",
-
         color: "white",
         fontSize: "25px",
         margin: "0",
