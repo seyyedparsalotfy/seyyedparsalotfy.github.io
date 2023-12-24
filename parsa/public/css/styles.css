@@ -173,7 +173,8 @@ a:hover {
 }
 
 #stats {
-  background: url("../images/other/bg.jpg") center / cover no-repeat fixed;
+  background: url("../images/other/my interest.jpg") center / cover no-repeat
+    fixed;
   padding: 60px 0 10px 0;
   color: white;
 }
