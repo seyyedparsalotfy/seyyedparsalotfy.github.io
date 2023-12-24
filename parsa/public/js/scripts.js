@@ -129,3 +129,26 @@ function checkScreenSize() {
 
 window.addEventListener("load", checkScreenSize);
 window.addEventListener("resize", checkScreenSize);
+window.onload = function () {
+  setTimeout(function () {
+    scrollDown();
+  }, 12000);
+};
+
+function scrollDown() {
+  var distance = window.innerHeight;
+  var currentY = window.pageYOffset;
+  var targetY = currentY + distance;
+
+  var speed = 1;
+  var step = Math.round(distance / ((speed * 1000) / 20));
+
+  var scrollInterval = setInterval(function () {
+    if (currentY < targetY) {
+      currentY += step;
+      window.scrollTo(0, currentY);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 20);
+}
